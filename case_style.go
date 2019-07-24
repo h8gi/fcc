@@ -15,7 +15,7 @@ const (
 	// UPPERCASE
 	UpperCase
 	// lowercase
-	lowercase
+	LowerCase
 )
 
 func (cs CaseStyle) String() string {
