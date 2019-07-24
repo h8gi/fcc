@@ -44,3 +44,5 @@ Args:
 - snake_case
 - camelCase
 - PascalCase
+- UPPERCASE
+- lowercase
