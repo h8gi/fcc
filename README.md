@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-go get -u github.com/h8gi/fcc
+go get -u github.com/h8gi/fcc/...
 ```
 
 ## Usage
