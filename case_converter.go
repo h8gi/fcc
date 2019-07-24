@@ -41,7 +41,10 @@ func (c *Converter) JoinWords(cs CaseStyle) string {
 		return c.CamelCase()
 	case PascalCase:
 		return c.PascalCase()
+	case UpperCase:
+		return c.UpperCase()
 	default:
+		// lowercase
 		return strings.Join(c.words, "")
 	}
 }
@@ -74,6 +77,15 @@ func (c *Converter) PascalCase() string {
 	words := make([]string, len(c.words))
 	for i, w := range c.words {
 		words[i] = strings.Title(w)
+	}
+	return strings.Join(words, "")
+}
+
+// UpperCase returns "UPPERCASE"
+func (c *Converter) UpperCase() string {
+	words := make([]string, len(c.words))
+	for i, w := range c.words {
+		words[i] = strings.ToUpper(w)
 	}
 	return strings.Join(words, "")
 }

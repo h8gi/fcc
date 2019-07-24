@@ -23,6 +23,8 @@ func TestConverter(t *testing.T) {
 				SnakeCase:  "good_by_world",
 				CamelCase:  "goodByWorld",
 				PascalCase: "GoodByWorld",
+				UpperCase:  "GOODBYWORLD",
+				LowerCase:  "goodbyworld",
 			},
 		},
 		{
@@ -34,6 +36,21 @@ func TestConverter(t *testing.T) {
 				SnakeCase:  "good_by_world",
 				CamelCase:  "goodByWorld",
 				PascalCase: "GoodByWorld",
+				UpperCase:  "GOODBYWORLD",
+				LowerCase:  "goodbyworld",
+			},
+		},
+		{
+			"GOODBY",
+			UpperCase,
+			[]string{"goodby"},
+			map[CaseStyle]string{
+				KebabCase:  "goodby",
+				SnakeCase:  "goodby",
+				CamelCase:  "goodby",
+				PascalCase: "Goodby",
+				UpperCase:  "GOODBY",
+				LowerCase:  "goodby",
 			},
 		},
 		{
@@ -45,6 +62,8 @@ func TestConverter(t *testing.T) {
 				SnakeCase:  "hello_world",
 				CamelCase:  "helloWorld",
 				PascalCase: "HelloWorld",
+				UpperCase:  "HELLOWORLD",
+				LowerCase:  "helloworld",
 			},
 		},
 	}

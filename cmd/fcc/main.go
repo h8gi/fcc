@@ -16,6 +16,8 @@ var caseOptions = map[string]fcc.CaseStyle{
 	"snake":  fcc.SnakeCase,
 	"camel":  fcc.CamelCase,
 	"pascal": fcc.PascalCase,
+	"lower":  fcc.LowerCase,
+	"upper":  fcc.UpperCase,
 }
 
 func keys(m map[string]fcc.CaseStyle) []string {
